@@ -1,3 +1,37 @@
 live-lecture
 
+23.2 - Backend - Model
+
 biblioteca cliente (integração com banco de dados)
+
+[7:34] imagem docker mysql
+[12:38] instalação do mysql2 (cliente)
+[12:38] connection pools
+[17:00] primeira query com connection / execute (execute mais performático)
+[20:45] [FIM] função de conexão com o banco
+[22:30] desestruturação de arrays 
+[23:09] console log table
+[24:20] servidor com express
+[26:00] nodemon
+[26:36] servidor com express inicial
+[27:40] [CUIDADO] não utilizar npm i mysql
+[29:07] [FIM] primeira rota concluída 
+[29:10] testando no insominia 
+[31:50] try catch 
+[33:36] middleware de erro
+[34:20] rescue
+[39:18] consulta por id (importante)
+[40:55] pegar o id pelos parâmetros
+[41:36] [sql injection] não fazer (importante) 
+[51:00] consulta correta (sem sql injection)
+[53:05] [INI][POST]
+[58:50] [FIM][POST]
+[1:04:28] [INI][PUT]
+[1:10:00] [FIM][PUT]
+[1:10:00] [INI][DELETE]
+[1:13:00] criação da camada Model 
+[1:22:50] refatora o servedr substituindo pela chamadada dos métodos 
+[1:30:00] reuso 
+[1:30:39] rodar outro script a parte
+[1:31:00] leitura de arquivo
+[1:34:50] sobre a biblioteca rescue

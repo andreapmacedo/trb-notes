@@ -1,0 +1,71 @@
+23.1 - Backend - Model
+
+biblioteca cliente (integração com banco de dados)
+
+[7:34] Imagem docker mysql
+[12:38] Instalação do mysql2 (cliente)
+[12:38] connection pools
+[17:00] Primeira query com connection / execute (execute mais performático)
+[20:45] [FIM] função de conexão com o banco
+[22:30] Desestruturação de arrays 
+[23:09] onsole table
+[24:20] Servidor com express
+[26:00] nodemon
+[26:36] Servidor com express inicial
+[27:40] [CUIDADO] não utilizar npm i mysql
+[29:07] [FIM] primeira rota concluída 
+[29:10] Testando no insominia 
+[31:50] try catch 
+[33:36] middleware de erro
+[34:20] rescue
+[39:18] Consulta por id (importante)
+[40:55] Pegar o id pelos parâmetros
+[41:36] [sql injection] não fazer (importante) 
+[51:00] Consulta correta (sem sql injection)
+[53:05] [INI][POST]
+[58:50] [FIM][POST]
+[1:04:28] [INI][PUT]
+[1:10:00] [FIM][PUT]
+[1:10:00] [INI][DELETE]
+[1:13:00] Criação da camada Model 
+[1:22:50] Refatora o servedr substituindo pela chamadada dos métodos 
+[1:30:00] Reuso 
+[1:30:39] Rodar outro script a parte
+[1:31:00] Leitura de arquivo
+[1:34:50] Sobre a biblioteca rescue
+
+23.2 - Backend - arquitetura de software - camada de controller e service
+
+isolamento de camadas
+middleware são os controllers ( controlar a entrada e a saída de dados)
+tratamento de dados é feito pela model
+services tem o objetivo de centralizar a regra de negócio da aplicação
+
+[4:25] Revisão aula de Model 
+[8:15] Verifica existencia de registro; retorna mensagem com status 404 quando a resposta vem um array vazio (cliente inexistente)
+[10:50] Verifica se já é cadastro único; retorna status 400 (cliente cadastrado) 
+[15:25] verifica se é possível atualizar cadastro inexistente
+[16:30] verifica se é possível excluir cadastro inexistente
+[21:30] Exemplo com o Hapi
+[23:00] Rodando o Hapi no nodemon
+[30:18] Separa a camada de service
+[37:00] Migrando a função do server para a camada services
+[41:50] git diff alterações
+[47:00] Camada de serviço independente do express concluída
+[47:40] Mais uma refatoração trazendo implementação do arquivo de servidor para services
+[1:05:] Resumo refatorar para camada de services
+[1:06] Trabalhando com controllers
+[1:07:10] middlewares vs controllers
+[1:16:50] Criando endpoint do 0
+[:]
+[:]
+[:]
+[:]
+[:]
+[:]
+[:]
+[:]
+[:]
+[:]
+[:]
+[:]
