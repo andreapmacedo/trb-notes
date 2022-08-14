@@ -41,31 +41,93 @@ middleware são os controllers ( controlar a entrada e a saída de dados)
 tratamento de dados é feito pela model
 services tem o objetivo de centralizar a regra de negócio da aplicação
 
-[4:25] Revisão aula de Model 
-[8:15] Verifica existencia de registro; retorna mensagem com status 404 quando a resposta vem um array vazio (cliente inexistente)
+[4:25] revisão aula de Model 
+[8:15] verifica existencia de registro; retorna mensagem com status 404 quando a resposta vem um array vazio (cliente inexistente)
 [10:50] Verifica se já é cadastro único; retorna status 400 (cliente cadastrado) 
 [15:25] verifica se é possível atualizar cadastro inexistente
 [16:30] verifica se é possível excluir cadastro inexistente
-[21:30] Exemplo com o Hapi
-[23:00] Rodando o Hapi no nodemon
-[30:18] Separa a camada de service
-[37:00] Migrando a função do server para a camada services
+[21:30] exemplo com o Hapi
+[23:00] rodando o Hapi no nodemon
+[30:18] separa a camada de service
+[37:00] migrando a função do server para a camada services
 [41:50] git diff alterações
-[47:00] Camada de serviço independente do express concluída
-[47:40] Mais uma refatoração trazendo implementação do arquivo de servidor para services
-[1:05:] Resumo refatorar para camada de services
-[1:06] Trabalhando com controllers
+[47:00] camada de serviço independente do express concluída
+[47:40] mais uma refatoração trazendo implementação do arquivo de servidor para services
+[1:05:] resumo refatorar para camada de services
+[1:06] trabalhando com controllers
 [1:07:10] middlewares vs controllers
-[1:16:50] Criando endpoint do 0
-[1:25:10] Sequencia de chamadas das camadas
-[1:26:00] Criação de rota post para adicionar um 
+[1:16:50] criando endpoint do 0
+[1:25:10] sequencia de chamadas das camadas
+[1:26:00] criação de rota post para adicionar um 
+
+
+23.3 - tribo A
+
+[:] rest
+[:] interface uniforme
+[:] arquitetura cliente servidor
+[9:00] cacheable
+[9:30] sem estado
+[9:45] sistema em camadas
+[10:40] código sob demanda
+[11:30] rest full
+[12:20] subindo um container com mysql
+[16:00] iniciando o projeto (npm init -y)
+[17:22] instalando as dependências 
+[17:30] instalando o express (npm i express)
+[17:53] instalando o nodemon (npm i nodemon -D)
+[17:53] instalando o eslint (npm i eslint-config-trybe-backend -D)
+[19:20] configurando o nodemon no package.json
+[19:40] começando a aplicação
+[21:30] utilizando rota
+[23:19] criando uma rota
+[27:20] rodando e verificando a rota criada
+[28:00] erro de endereço em uso (EADDRINUSE)
+[28:30] matando todos os serviços node (kikkall node)
+[29:00] usando o thunder cliente
+[30:48] res.json
+[33:17] utilizando o drive mysql2 para linkar com o mysql (npm i mysql2)
+[34:00] criando um arquivo de conexão connection.js
+[36:44] criando um model
+[38:50] atalho do vs code para copiar e colar multiplas palavras
+[39:40] add criando uma função que executa uma query de adição de dados ao banco mysql
+[42:18] getAll
+[43:00] getById
+[44:00] update
+[46:00] retorno implplícito 
+[47:00] utilizando template literal - quebrando funções quam queries grandes
+[48:00] exclude
+[51:40] await redundante 
+[54:50] criação do controller
+[57:00] sobre o status
+[1:02:00] try catch
 [:]
 [:]
 [:]
 [:]
 [:]
 [:]
-[:]
-[:]
-[:]
-[:]
+
+
+23 mentoria revisão - Backend 
+
+testes
+[1:35:00] criando diretórios
+[1:36:00] o que precisa testar
+[1:37:00] testando o model
+[1:37:00] GET ALL
+[1:40:38] funcionalidades do chai
+[1:42:00] cria comando para rodar os testes
+[1:44:55] precisa ou não de parenteses
+[1:49:16] ignora eslint no projeto
+[1:49:50] controlando o banco com o sinon
+[1:50:00] utilizando after before
+[1:50:44] fazendo um duble
+[1:52:00] resolves
+[1:56:00] after
+[1:59:00] removendo um duble
+[2:02:00] Sino.restore()
+[2:05:00] utilizando o AAA
+[2:06:00] afterEach
+[2:13:00] testando o service
+[2:19:00] testando o controller
