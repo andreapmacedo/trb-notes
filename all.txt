@@ -131,3 +131,9 @@ testes
 [2:06:00] afterEach
 [2:13:00] testando o service
 [2:19:00] testando o controller
+
+[02:59:00] try catch para controller
+[03:02:00] middleware de erro
+[00:00:00]
+[00:00:00]
+[00:00:00]
