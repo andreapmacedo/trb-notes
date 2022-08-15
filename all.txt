@@ -123,7 +123,7 @@ testes
 [1:49:50] controlando o banco com o sinon
 [1:50:00] utilizando after before
 [1:50:44] fazendo um duble
-[1:52:00] resolves
+[1:52:00] resolvesG
 [1:56:00] after
 [1:59:00] removendo um duble
 [2:02:00] Sino.restore()
